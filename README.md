@@ -1,50 +1,37 @@
-# Welcome to your Expo app 👋
+# App React Native: Conversor de Moedas com Axios
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto é um aplicativo simples de **conversão de moedas** desenvolvido com **React Native** e utilizando a biblioteca **Axios** para consumir uma API de taxas de câmbio em tempo real.
 
-## Get started
+---
 
-1. Install dependencies
+## 📋 **Funcionalidades**
 
-   ```bash
-   npm install
-   ```
+1. **Conversão de Moedas**:
+   - O usuário pode selecionar uma moeda de origem e uma moeda de destino.
+   - O aplicativo calcula e exibe o valor convertido com base na taxa de câmbio atual.
 
-2. Start the app
+2. **Busca de Taxas de Câmbio em Tempo Real**:
+   - As taxas de câmbio são obtidas de uma API externa usando Axios.
 
-   ```bash
-    npx expo start
-   ```
+3. **Interface Intuitiva**:
+   - Design responsivo e amigável.
+   - Utilização de componentes do React Native para melhorar a experiência do usuário.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ **Tecnologias Utilizadas**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **React Native**: Framework para desenvolvimento do aplicativo.
+- **Axios**: Biblioteca para realizar requisições HTTP.
+- **API de Taxas de Câmbio**: Um serviço externo, como [ExchangeRate-API](https://www.exchangerate-api.com/) ou [Exchangeratesapi.io](https://economia.awesomeapi.com.br).
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🚀 **Como Funciona**
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. O aplicativo carrega as taxas de câmbio disponíveis ao iniciar.
+2. O usuário seleciona:
+   - A moeda de origem (ex.: USD - Dólar Americano).
+   - A moeda de destino (ex.: EUR - Euro).
+3. Após inserir o valor na moeda de origem, o aplicativo faz o cálculo baseado na taxa de câmbio atual.
+4. O valor convertido é exibido em tempo real
